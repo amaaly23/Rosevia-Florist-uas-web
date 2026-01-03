@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rosevia Florist | Produk</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Rosevia Florist</h1>
+          <small>Produk & Paket</small>
+        </div>
+
+      <!-- Garis menu navigasi -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a class="active" href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak/Form</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+      <!-- Garis menu navigasi -->
+
+  <!-- Banner -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h2>Produk lengkap: bouquet, flower box, dan dekorasi</h2>
+          <p>Pilih paket sesuai kebutuhan. Bisa request pink dominan, pita, dan tulisan kartu.</p>
+          <div class="badges">
+            <div class="badge">🌷 Fresh flower</div>
+            <div class="badge">📝 Custom card</div>
+            <div class="badge">💗 Pink theme</div>
+          </div>
+        </div>
+        <img class="hero-img" src="b9.jpg" alt="Rangkaian bouquet pink"/>
+      </div>
+    </section>
+  <!-- Banner -->
+
+  <!-- Content -->
+    <div class="section-title">
+      <h2>Daftar Produk</h2>
+      <span>klik Order</span>
+    </div>
+
+    <section class="products">
+      <article class="card product">
+        <img src="b4.jpg" alt="Mawar pink"/>
+        <div class="body">
+          <h3>Pink Rose Bouquet</h3>
+          <p>Isi: mawar pink, baby breath, wrapping premium.</p>
+          <div class="price">
+            <strong>Rp 185.000</strong>
+            <button class="btn" onclick="orderNow('Pink Rose Bouquet')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b2.jpg" alt="Tulip"/>
+        <div class="body">
+          <h3>Tulip Dream</h3>
+          <p>Isi: tulip pink, wrapping minimalis, kartu ucapan.</p>
+          <div class="price">
+            <strong>Rp 225.000</strong>
+            <button class="btn" onclick="orderNow('Tulip Dream')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b5.jpg" alt="Lily"/>
+        <div class="body">
+          <h3>Lily Soft Pink</h3>
+          <p>Isi: lily, mawar, daun (opsional), tema pink lembut.</p>
+          <div class="price">
+            <strong>Rp 210.000</strong>
+            <button class="btn" onclick="orderNow('Lily Soft Pink')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b3.jpg" alt="Gift box"/>
+        <div class="body">
+          <h3>Gift Box Bloom</h3>
+          <p>Flower box serba pink, cocok untuk surprise.</p>
+          <div class="price">
+            <strong>Rp 260.000</strong>
+            <button class="btn" onclick="orderNow('Gift Box Bloom')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b6.jpg" alt="Bouquet jumbo"/>
+        <div class="body">
+          <h3>Bouquet Jumbo Pink</h3>
+          <p>Ukuran besar untuk event spesial (wisuda/anniversary).</p>
+          <div class="price">
+            <strong>Rp 325.000</strong>
+            <button class="btn" onclick="orderNow('Bouquet Jumbo Pink')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b8.jpg" alt="Dekorasi meja"/>
+        <div class="body">
+          <h3>Meja Cantik (Table Flower)</h3>
+          <p>Dekorasi meja kecil untuk rumah, kantor, atau acara.</p>
+          <div class="price">
+            <strong>Rp 150.000</strong>
+            <button class="btn" onclick="orderNow('Meja Cantik (Table Flower)')">Order</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="notice">
+      Untuk pemesanan lengkap, isi form pada menu <b>Kontak/Form</b>.
+    </div>
+  </main>
+  <!-- Content -->
+
+ <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div id="clock">Memuat waktu...</div>
+      <div>
+        © <span id="year"></span> Rosevia Florist Rahma —
+        <b>NAMA:</b> RAHMAHDIANTY SAKINAH • <b>NIM:</b> 251011700182 • <b>KELAS:</b> 01SIFP003
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

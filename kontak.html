@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rosevia Florist | Kontak/Form</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Rosevia Florist</h1>
+          <small>Kontak & Form Pemesanan</small>
+        </div>
+
+  <!-- Garis menu navigasi --> 
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a class="active" href="kontak.html">Kontak/Form</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Garis menu navigasi -->
+
+  <!-- Banner -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h2>Form Pemesanan</h2>
+          <p>Isi data berikut untuk pemesanan. Setelah submit akan muncul alert.</p>
+          <div class="badges">
+            <div class="badge">🧾 Form input</div>
+            <div class="badge">📍 Alamat kirim</div>
+            <div class="badge">🕒 Jadwal kirim</div>
+          </div>
+        </div>
+        <img class="hero-img" src="b11.jpeg" alt="Form pemesanan"/>
+      </div>
+    </section>
+    <!-- Banner -->
+
+  <!-- Content -->
+    <div class="section-title">
+      <h2>Formulir Pemesanan</h2>
+      <span>validasi sederhana</span>
+    </div>
+
+    <section class="card">
+      <form class="form" id="orderForm">
+        <div>
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" placeholder="Nama kamu" required>
+        </div>
+        <div>
+          <label for="hp">No. HP</label>
+          <input id="hp" name="hp" type="tel" placeholder="08xxxxxxxxxx" required>
+        </div>
+
+        <div>
+          <label for="produk">Pilih Produk</label>
+          <select id="produk" name="produk" required>
+            <option value="">-- pilih --</option>
+            <option>Pink Rose Bouquet</option>
+            <option>Tulip Dream</option>
+            <option>Lily Soft Pink</option>
+            <option>Gift Box Bloom</option>
+            <option>Bouquet Jumbo Pink</option>
+            <option>Meja Cantik (Table Flower)</option>
+          </select>
+        </div>
+        <div>
+          <label for="tanggal">Tanggal Kirim</label>
+          <input id="tanggal" name="tanggal" type="date" required>
+        </div>
+
+        <div class="full">
+          <label for="alamat">Alamat Kirim</label>
+          <textarea id="alamat" name="alamat" rows="3" placeholder="Tulis alamat lengkap..." required></textarea>
+        </div>
+
+        <div class="full">
+          <label for="catatan">Catatan / Pesan Kartu</label>
+          <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: 'Selamat wisuda ya!'" ></textarea>
+          <div class="help">Boleh kosong. Ini termasuk pengembangan fitur web.</div>
+        </div>
+
+        <div class="full">
+          <button class="btn" type="submit">Submit Pesanan</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Alamat Toko</h3>
+        <p>Jl. Mawar Pink No. 12, Tangerang</p>
+      </article>
+      <article class="card">
+        <h3>Jam Operasional</h3>
+        <p>Senin–Minggu: 08.00–21.00</p>
+      </article>
+      <article class="card">
+        <h3>Kontak</h3>
+        <p>WhatsApp: 08xx-xxxx-xxxx • Instagram: @tokobungarahma</p>
+      </article>
+    </section>
+  </main>
+  <!-- Content -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div id="clock">Memuat waktu...</div>
+      <div>
+        © <span id="year"></span> Rosevia Florist —
+        <b>NAMA:</b> RAHMAHDIANTY SAKINAH • <b>NIM:</b> 251011700182 • <b>KELAS:</b> 01SIFP003
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("orderForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const nama = document.getElementById("nama").value.trim();
+      const produk = document.getElementById("produk").value;
+      const tanggal = document.getElementById("tanggal").value;
+
+      alert(
+        `Pesanan berhasil dikirim (demo).\n\n` +
+        `Nama: ${nama}\nProduk: ${produk}\nTanggal Kirim: ${tanggal}\n\n` +
+        `Silakan screenshot untuk bukti tugas jika perlu.`
+      );
+
+      this.reset();
+    });
+  </script>
+</body>
+</html>

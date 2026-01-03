@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rosevia Florist | Beranda</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Rosevia Florist</h1>
+          <small>Serba pink, manis & elegan</small>
+        </div>
+      </div>
+
+      <!-- Garis menu navigasi -->
+      <nav>
+        <ul>
+          <li><a class="active" href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak/Form</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Garis menu navigasi -->
+  </header>
+
+  <!-- Banner -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h2>Rangkaian bunga cantik untuk setiap momen 🌸</h2>
+          <p>
+            Rosevia Florist menyediakan bouquet, bunga meja, dan gift box dengan tema pink yang tetap nyaman dipandang.
+            Cocok untuk ulang tahun, wisuda, anniversary, dan hadiah spesial.
+          </p>
+          <div class="badges">
+            <div class="badge">✅ Custom kartu ucapan</div>
+            <div class="badge">🚚 Pengiriman (kota tertentu)</div>
+            <div class="badge">🎁 Packaging premium</div>
+          </div>
+        </div>
+        <img class="hero-img" src="bbanner.jpg" alt="Bouquet bunga warna pink"/>
+      </div>
+    </section>
+    <!-- Banner -->
+
+    <!-- Content -->
+    <div class="section-title">
+      <h2>Kenapa pilih Rosevia Florist?</h2>
+      <span>Clean + Pink elegan</span>
+    </div>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Banyak Pilihan</h3>
+        <p>Rosevia Florist Menyediakan Berbagai Rangkaian Bunga.</p>
+      </article>
+      <article class="card">
+        <h3>Produk dari Rosevia Florist</h3>
+        <p>Rosevia Florist menghadirkan aneka bunga segar yang cocok untuk hadiah, acara spesial, dan dekorasi.</p>
+      </article>
+      <article class="card">
+        <h3>Layanan Rosevia Florist</h3>
+        <p>Memberikan salam otomatis dan informasi waktu sebagai sambutan untuk pengunjung Rosevia Florist.</p>
+      </article>
+    </section>
+
+    <div class="section-title">
+      <h2>Best Seller</h2>
+      <span>rekomendasi favorit</span>
+    </div>
+
+    <section class="products">
+      <article class="card product">
+        <img src="b1.jpg" alt="Bouquet Mawar Pink"/>
+        <div class="body">
+          <h3>Pink Rose Bouquet</h3>
+          <p>Bouquet mawar pink dengan wrapping putih-pink, cocok untuk hadiah romantis.</p>
+          <div class="price">
+            <strong>Rp 185.000</strong>
+            <button class="btn" onclick="orderNow('Pink Rose Bouquet')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b2.jpg" alt="Tulip Pink Bouquet"/>
+        <div class="body">
+          <h3>Tulip Dream</h3>
+          <p>Tulip pink minimalis, vibe elegan dan modern untuk wisuda atau anniversary.</p>
+          <div class="price">
+            <strong>Rp 225.000</strong>
+            <button class="btn" onclick="orderNow('Tulip Dream')">Order</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card product">
+        <img src="b3.jpg" alt="Gift box bunga"/>
+        <div class="body">
+          <h3>Gift Box Bloom</h3>
+          <p>Gift box bunga + kartu ucapan, packaging premium serba pink.</p>
+          <div class="price">
+            <strong>Rp 260.000</strong>
+            <button class="btn" onclick="orderNow('Gift Box Bloom')">Order</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="notice">
+  <b>Rosevia Florist:</b> Menyediakan berbagai rangkaian bunga (bouquet, flower box, dan table flower) dengan tema pink yang elegan. 
+  Silakan lihat produk, galeri, dan isi form pemesanan untuk melakukan order.
+</div>
+  </main>
+  <!-- Content -->
+
+ <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div id="clock">Memuat waktu...</div>
+      <div>
+        © <span id="year"></span> Rosevia Florist —
+        <b>NAMA:</b> RAHMAHDIANTY SAKINAH • <b>NIM:</b> 251011700182 • <b>KELAS:</b> 01SIFP003
+      </div>
+    </div>
+  </footer>
+   <!-- Footer -->
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
